@@ -1,1 +1,0 @@
-# Catalog-of-my-things
