@@ -1,7 +1,8 @@
 require 'json'
+require 'time' #  line to require the 'time' library
 
 class Game
-  attr_accessor :title, :platform, :last_played_at
+  attr_accessor :title, :platform, :last_played_at, :author
 
   def initialize(title, platform)
     @title = title
