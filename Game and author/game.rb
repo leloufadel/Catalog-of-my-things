@@ -10,7 +10,14 @@ class Game
   end
 
   def can_be_archived?
-    (Time.now - last_played_at) > 2 * 365 * 24 * 60 * 60 # 2 years in seconds
+    # Call the parent class's can_be_archived? method
+    parent_can_be_archived = super
+
+    # Check if last_played_at is older than 2 years
+    last_played_threshold = Time.now - 2 * 365 * 24 * 60 * 60 # 2 years in seconds
+
+    # Return true only if both conditions are met
+    parent_can_be_archived && (last_played_at < last_played_threshold)
   end
 
   def to_json(*_args)
