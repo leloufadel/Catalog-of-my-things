@@ -27,4 +27,13 @@ class Game
       game.last_played_at = Time.parse(data['last_played_at'])
     end
   end
+
+  def save_to_file(filename)
+    File.write(filename, to_json)
+  end
+
+  def self.load_from_file(filename)
+    data = File.read(filename)
+    from_json(data)
+  end
 end
