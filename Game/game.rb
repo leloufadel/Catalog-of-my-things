@@ -13,11 +13,11 @@ class Game
     (Time.now - last_played_at) > 2 * 365 * 24 * 60 * 60 # 2 years in seconds
   end
 
-  def to_json
+  def to_json(*_args)
     {
       title: @title,
       platform: @platform,
-      last_played_at: @last_played_at.to_s,
+      last_played_at: @last_played_at.to_s
     }.to_json
   end
 
