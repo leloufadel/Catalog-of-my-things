@@ -1,3 +1,5 @@
+require 'json'
+
 class Game
   attr_accessor :title, :platform, :last_played_at
 
@@ -8,7 +10,21 @@ class Game
   end
 
   def can_be_archived?
-    # Override the method from the parent class
     (Time.now - last_played_at) > 2 * 365 * 24 * 60 * 60 # 2 years in seconds
+  end
+
+  def to_json
+    {
+      title: @title,
+      platform: @platform,
+      last_played_at: @last_played_at.to_s,
+    }.to_json
+  end
+
+  def self.from_json(json)
+    data = JSON.parse(json)
+    new(data['title'], data['platform']).tap do |game|
+      game.last_played_at = Time.parse(data['last_played_at'])
+    end
   end
 end
