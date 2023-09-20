@@ -26,4 +26,13 @@ class Author
       author.items = data['items'].map { |item_data| Game.from_json(item_data) }
     end
   end
+
+  def save_to_file(filename)
+    File.write(filename, to_json)
+  end
+
+  def self.load_from_file(filename)
+    data = File.read(filename)
+    from_json(data)
+  end
 end
