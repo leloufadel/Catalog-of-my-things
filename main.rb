@@ -2,7 +2,9 @@ require_relative 'app'
 
 def main
   app = App.new
-  options = ['List all books', 'List labels', 'List all music albums', 'List all genres', 'List Games', 'Add a book', 'Add a music album', 'Add a Game', 'Save Games to File [type -> games.json]', 'Quit']
+  options = ['List all books', 'List labels', 'List all music albums',
+             'List all genres', 'List Games', 'Add a book', 'Add a music album',
+             'Add a Game', 'Save Games to File [type -> games.json]', 'Quit']
   puts "Welcome to My Catalog."
 
   loop do
