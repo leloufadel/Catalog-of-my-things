@@ -7,8 +7,5 @@ module DisplayLabel
         puts "#{index}) Label Title: #{label.title}, Label Color: #{label.color}"
       end
     end
-
-    puts 'Press Enter to continue!'
-    gets.chomp
   end
 end

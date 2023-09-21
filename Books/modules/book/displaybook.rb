@@ -8,8 +8,5 @@ module DisplayBook
         puts "#{index}) Publisher: #{book.publisher}, Publish Date: #{book.publish_date}, Label: #{label_title}"
       end
     end
-
-    puts 'Press Enter to continue!'
-    gets.chomp
   end
 end
