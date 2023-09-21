@@ -1,0 +1,23 @@
+[
+  {
+    "cover_state": "ISO",
+    "publisher": "LELO",
+    "publish_date": "2004/10/10",
+    "id": 674,
+    "label": "UI"
+  },
+  {
+    "cover_state": "GOOD",
+    "publisher": "IEE",
+    "publish_date": "2005/12/12",
+    "id": 553,
+    "label": "labil"
+  },
+  {
+    "cover_state": "Excellent",
+    "publisher": "Elsivier",
+    "publish_date": "2015/10/11",
+    "id": 652,
+    "label": "harry-label"
+  }
+]
