@@ -2,6 +2,8 @@ require_relative 'music_album'
 require_relative 'genre_module'
 
 module MusicAlbumModule
+  include GenreModule
+
   def list_all_music_albums(music_albums)
     puts 'Music Albums: '
     music_albums.each_with_index do |a, i|
