@@ -1,3 +1,4 @@
+# rubocop:disable all
 require_relative 'Books/classes/book/book'
 require_relative 'Books/classes/book/label'
 require_relative 'Books/modules/modules'
