@@ -16,25 +16,22 @@ module Modules
   def save_collections
     save_book
     save_label
-   
   end
 
   def load_collections
     load_labels
     load_books
-   
   end
 
-# def load_collections
-#     puts 'Loading data from JSON files...'
-    
-#     load_labels
-#     puts "Loaded #{@label.size} labels."
-  
-#     load_books
-#     puts "Loaded #{@books.size} books."
-  
-#     puts 'Data loading complete.'
-#   end
-  
+  # def load_collections
+  #     puts 'Loading data from JSON files...'
+
+  #     load_labels
+  #     puts "Loaded #{@label.size} labels."
+
+  #     load_books
+  #     puts "Loaded #{@books.size} books."
+
+  #     puts 'Data loading complete.'
+  #   end
 end
