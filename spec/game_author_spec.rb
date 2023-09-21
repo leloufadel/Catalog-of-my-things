@@ -1,7 +1,7 @@
 require 'json'
 require 'minitest'
-require_relative '../Game_and_author/game' # Include the Game class
-require_relative '../Game_and_author/author' # Include the Author class
+require_relative '../Game_and_author/Data/game' # Include the Game class
+require_relative '../Game_and_author/Data/author' # Include the Author class
 
 RSpec.describe Game do
   let(:game_data) { { 'title' => 'Sample Game', 'platform' => 'Xbox', 'last_played_at' => Time.now.to_s } }
