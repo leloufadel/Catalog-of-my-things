@@ -5,11 +5,11 @@ def main
   options = ['List all books', 'List labels', 'List all music albums',
              'List all genres', 'List Games', 'Add a book', 'Add a music album',
              'Add a Game', 'Save Games to File [type -> games.json]', 'Quit']
-  puts "Welcome to My Catalog."
+  puts 'Welcome to My Catalog.'
 
   loop do
     puts "\n"
-    puts "Options:"
+    puts 'Options:'
     options.each_with_index do |option, index|
       puts "#{index + 1} - #{option}"
     end
