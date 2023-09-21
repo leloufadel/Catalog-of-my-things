@@ -1,4 +1,4 @@
-require_relative '../classes/book/book'
+require_relative '../Books/classes/book/book'
 
 RSpec.describe Book do
   let(:book_publisher) { 'Okolie Tochi' }

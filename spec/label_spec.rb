@@ -1,5 +1,5 @@
-require_relative '../classes/book/label'
-require_relative '../classes/item'
+require_relative '../Books/classes/book/label'
+require_relative '../item'
 
 RSpec.describe Label do
   let(:label_title) { 'Comedy' }
@@ -17,7 +17,7 @@ RSpec.describe Label do
   end
 
   describe '#add_item' do
-    let(:item) { Item.new('2014-13-17') }
+    let(:item) { Item.new('2014-13-17', false) }
     it 'adds item to the label' do
       label.add_item(item)
       expect(label.items).to include(item)
