@@ -3,21 +3,21 @@
     "cover_state": "ISO",
     "publisher": "LELO",
     "publish_date": "2004/10/10",
-    "id": 483,
+    "id": 567,
     "label": "UI"
   },
   {
     "cover_state": "GOOD",
     "publisher": "IEE",
     "publish_date": "2005/12/12",
-    "id": 950,
+    "id": 241,
     "label": "labil"
   },
   {
     "cover_state": "Excellent",
     "publisher": "Elsivier",
     "publish_date": "2015/10/11",
-    "id": 377,
+    "id": 591,
     "label": "harry-label"
   }
 ]
