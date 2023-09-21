@@ -22,7 +22,7 @@
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 ruby-group-capstone-project <a name="ruby-group-capstone-project"></a>
-In this project, we created a console app that will help you to keep a record of different types of things you own:
+In this project, we created a console app that will help you to keep a record of different types of things you won: books, music albums, movies, and games. Everything based on the UML class diagram. The data stored in JSON files but we also prepared a database with tables structure analogical to our program's classes structure.
 
 - books
 - music albums
@@ -36,6 +36,7 @@ In this project, we created a console app that will help you to keep a record of
   <summary>Client</summary>
   <ul> 
     <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
+        <li><a href="https://www.postgresql.org/">PostgreSQL.</a></li>
   </ul>
 </details>
 
@@ -68,6 +69,11 @@ In order to run this project you need:
 - You should be able to use [IRB](https://en.wikipedia.org/wiki/Ruby_(programming_language)#Features).
 
 ### Setup
+- Clone the project using git-bash or Githup Desktop.
+- Open the project folder with VSCode or any Editor.
+- Open terminal and navigate to the project folder.
+- Type irb.
+- Copy the code from files and run it.
 
 Clone this repository to your desired folder:
 
@@ -94,7 +100,7 @@ To run the project, execute the following command:
 ### Test <a name="test"></a>
 
 To test the project, execute the following command:
-
+- Open terminal and type gem install rspec.
 ```
   rspec src/spec/
 ```
@@ -130,10 +136,8 @@ To test the project, execute the following command:
 
  - Implement:
 
-- Add new book.
-- Add new games.
-- Add new music albums.
-- List all items added.
+- Add more features for my catalog.
+- Implement more modules.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
