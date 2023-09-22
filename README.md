@@ -1,5 +1,8 @@
 <a name="readme-top"></a>
 
+<div align="center">
+  <h2> My Catalogs App </h2>
+</div>
 
 # 📗 Table of Contents
 - [📗 Table of Contents](#-table-of-contents)
@@ -21,7 +24,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 ruby-group-capstone-project <a name="ruby-group-capstone-project"></a>
+# 📖 Catalog of My Things <a name="ruby-group-capstone-project"></a>
 In this project, we created a console app that will help you to keep a record of different types of things you won: books, music albums, movies, and games. Everything based on the UML class diagram. The data stored in JSON files but we also prepared a database with tables structure analogical to our program's classes structure.
 
 - books
@@ -51,9 +54,8 @@ In this project, we created a console app that will help you to keep a record of
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Video Presentation Link <a name="live-demo"></a>
-
-See the live presentation <a>here</a>
+## 🎥 Video Presentation <a name="#video"></a>
+- [Catalog of my things video Link ](https://drive.google.com/file/d/1NNdMwNiy-Gk8TbgYOkzxiIyv7bDSu5sp/view?usp=sharing)
 
 <p align="right">(<ahref="#readme-top">back to top</a>)</p>
 
