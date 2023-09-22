@@ -1,0 +1,73 @@
+CREATE DATABASE catalogue_of_things;
+
+-- Create Item Table
+CREATE TABLE Item (
+	Id INT NOT NULL GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+	genre_id INT,
+	author_id INT,
+	label_id INT,
+	public_date DATE,
+	archived BOOLEAN
+);
+
+-- Create MusicAlbum Table
+CREATE TABLE MusicAlbum (
+    Id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    Item_Id INTEGER,
+    On_Spotify BOOLEAN,
+    Publish_Date DATE,
+    FOREIGN KEY(Item_Id) REFERENCES Item(Id) ON DELETE RESTRICT ON UPDATE CASCADE
+);
+
+-- Create Genre Table
+CREATE TABLE Genre (
+    Id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    Name VARCHAR(100),
+    Item_Id INTEGER,
+    FOREIGN KEY(Item_Id) REFERENCES Item(Id) ON DELETE RESTRICT ON UPDATE CASCADE
+);
+
+-- Create Book Table
+CREATE TABLE Book (
+  Id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  Item_id INTEGER,
+  Publish_date DATE,
+  Archived BOOLEAN,
+  Publisher VARCHAR(150),
+  Cover_state VARCHAR(200),
+  FOREIGN KEY(Item_id) REFERENCES Item(Id) ON DELETE RESTRICT ON UPDATE CASCADE
+);
+
+-- Create Labels
+CREATE TABLE Labels (
+  Id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  Item_id INTEGER,
+  Title VARCHAR(150),
+  Color VARCHAR(100),
+  FOREIGN KEY(Item_id) REFERENCES Item(Id) ON DELETE RESTRICT ON UPDATE CASCADE
+);
+
+-- Create Game
+CREATE TABLE Game (
+  Id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  Item_id INTEGER,
+  Last_played_date DATE NOT NULL,
+  Multiplayer BOOLEAN NOT NULL,
+  FOREIGN KEY(Item_id) REFERENCES Item(Id) ON DELETE RESTRICT ON UPDATE CASCADE
+);
+
+-- Create Author
+CREATE TABLE Author (
+  Id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  First_name VARCHAR(50),
+  Last_name VARCHAR(50),
+  Item_id INTEGER,
+  FOREIGN KEY(Item_id) REFERENCES Item(Id) ON DELETE RESTRICT ON UPDATE CASCADE
+);
+
+CREATE INDEX Index_MusicAlbum_Item_Id ON MusicAlbum(Item_Id);
+CREATE INDEX Index_Genre_Genre_Id ON Genre(Item_Id);
+CREATE INDEX index_Game_item_id ON Game(Item_id);
+CREATE INDEX index_Book_item_id ON Book(Item_id);
+CREATE INDEX index_Labels_item_id ON Labels(Item_id);
+CREATE INDEX index_Author_item_id ON Author(Item_id);
