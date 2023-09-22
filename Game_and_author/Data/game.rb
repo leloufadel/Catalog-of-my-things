@@ -1,10 +1,12 @@
+require_relative '../../item'
 require 'json'
 require 'time' #  line to require the 'time' library
 
-class Game
+class Game < Item
   attr_accessor :title, :platform, :last_played_at, :author
 
   def initialize(title, platform)
+    super(publish_date, archived, id: id)
     @title = title
     @platform = platform
     @last_played_at = Time.now
